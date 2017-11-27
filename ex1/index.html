@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <meta content="">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid">
+
+
+			<!--hiden filds for JS-->
+			      <div id="new_item">
+			      	<div class= "panel panel-default col-md-10 col-md-offset-1 active-_add_pallet">
+					<div class="panel-body">
+					<div class="top_panel row _add_parsel">
+				            <div class="col-md-offset-1 col-md-5 ">
+				                <div class="input-group">
+				                    <div class="input-group-btn">
+				                        <button type="button" class="btn  btn-info dropdown-toggle"
+				                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Belgium <span
+				                                class="caret"></span></button>
+				                        <ul class="dropdown-menu">
+				                            <li><a href="#">Ukraine</a></li>
+				                        </ul>
+				                    </div><!-- /btn-group -->
+				                    <input type="text" name="ZIP address" class="form-control" aria-label="...">
+				                </div><!-- /input-group -->
+				            </div><!-- /.col-lg-6 -->
+				            <div class="col-md-5">
+				                <div class="input-group">
+				                    <div class="input-group-btn">
+				                        <button type="button" class="btn btn-info dropdown-toggle"
+				                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Belgium <span
+				                                class="caret"></span></button>
+				                        <ul class="dropdown-menu">
+				                            <li><a href="#">Kyiv</a></li>
+				                        </ul>
+				                    </div><!-- /btn-group -->
+				                    <input type="text" name="ZIP address" class="form-control" aria-label="...">
+				                </div><!-- /input-group -->
+				            </div><!-- /.col-md-6 -->
+	      				</div>
+						<div class="row pallet bottom_panel">
+	      					<div class="col-md-offset-1 col-md-2 check " >
+                                    <input type="checkbox" class="toggle_hidden" >
+	      					</div>
+	      					<div class="property col-md-2 _add_pallet">
+								<label for="Number">Number of pallets:</label>
+		      					<div id="Number" class="input-group col-md-1">
+								    <input type="number" name="PALLET_NUMBER" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Pcs</span>
+								</div>
+	      					</div>
+	      					<div class="property  col-md-2 _add_pallet">
+								<label for="Height_pallet">Height:</label>
+		      					<div id="Height_pallet" class="input-group col-md-1">
+								    <input type="number" name="PALLET_HEIGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Cm</span>
+								</div>
+	      					</div>
+	      					<div class="property col-md-2 _add_pallet">
+								<label for="Weight_pallet">Weight for pallet:</label>
+		      					<div id="Weight_pallet" class="input-group col-md-1">
+								    <input type="number" name="PALLET_WEIGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Kg</span>
+								</div>
+	      					</div>   
+	      					<div class="property col-md-1 _add_parsel">
+								<label for="weight">Weight:</label>
+		      					<div id="weight" class="input-group col-md-1">
+								    <input type="number" name="PARCEL_WEIGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Kg</span>
+								</div>
+	      					</div>
+	      					<div class="property property_first col-md-1 _add_parsel">
+								<label for="Lenght">Lenght:</label>
+		      					<div id="Lenght" class="input-group col-md-1">
+								    <input type="number" name="PARCEL_LENGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Cm</span>
+								</div>
+	      					</div>
+	      					<div class="property col-md-1 _add_parsel">
+								<label for="Width">Width:</label>
+		      					<div id="Width" class="input-group col-md-1">
+								    <input type="number" name="PARCEL_WIDTH" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Cm</span>
+								</div>
+	      					</div>      					
+	      					<div class="property col-md-1 _add_parsel">
+								<label for="Height">Height:</label>
+		      					<div id="Height" class="input-group col-md-1">
+								    <input type="number" name="PARCEL_HEIGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Cm</span>
+								</div>
+	      					</div> 
+					</div>
+				</div>
+				</div>
+
+			   </div>
+
+
+        <form id="form_sender">
+    	<div id="source_wrap">
+
+    			<!--PARCEL-->
+			<div class= "panel panel-default col-md-10 col-md-offset-1 active-_add_parsel" id="PARCEL_FIRST">
+					<div class="panel-body">
+					     <div class="top_panel row _add_parsel">
+				            <div class="col-md-offset-1 col-md-5 ">
+				                <div class="input-group">
+				                    <div class="input-group-btn">
+				                        <button type="button" class="btn  btn-info dropdown-toggle"
+				                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Belgium <span
+				                                class="caret"></span></button>
+				                        <ul class="dropdown-menu">
+				                            <li><a href="#">Ukraine</a></li>
+				                        </ul>
+				                    </div><!-- /btn-group -->
+				                    <input type="text" name="ZIP address" class="form-control" aria-label="...">
+				                </div><!-- /input-group -->
+				            </div><!-- /.col-lg-6 -->
+				            <div class="col-md-5">
+				                <div class="input-group">
+				                    <div class="input-group-btn">
+				                        <button type="button" class="btn btn-info dropdown-toggle"
+				                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Belgium <span
+				                                class="caret"></span></button>
+				                        <ul class="dropdown-menu">
+				                            <li><a href="#">Kyiv</a></li>
+				                        </ul>
+				                    </div><!-- /btn-group -->
+				                    <input type="text" name="ZIP address" class="form-control" aria-label="...">
+				                </div><!-- /input-group -->
+				            </div><!-- /.col-md-6 -->
+	      				</div>
+	      				<div class="row bottom_panel">
+	      					<div class="col-md-offset-1 col-md-2 check">
+		      					<input type="checkbox" data-onstyle="info" data-offstyle="info" data-toggle="toggle" data-on="PARCEL" data-off="PALLET" data-class="fast" checked>
+	      					</div>
+	      					<div class="property col-md-1 _add_parsel">
+								<label for="weight">Weight:</label>
+		      					<div id="weight" class="input-group col-md-1">
+								    <input type="number" name="PARCEL_WEIGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Kg</span>
+								</div>
+	      					</div>
+	      					<div class="property property_first col-md-1 _add_parsel">
+								<label for="Lenght">Lenght:</label>
+		      					<div id="Lenght" class="input-group col-md-1">
+								    <input type="number" name="PARCEL_LENGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Cm</span>
+								</div>
+	      					</div>
+	      					<div class="property col-md-1 _add_parsel">
+								<label for="Width">Width:</label>
+		      					<div id="Width" class="input-group col-md-1">
+								    <input type="number" name="PARCEL_WIDTH" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Cm</span>
+								</div>
+	      					</div>      					
+	      					<div class="property col-md-1 _add_parsel">
+								<label for="Height">Height:</label>
+		      					<div id="Height" class="input-group col-md-1">
+								    <input type="number" name="PARCEL_HEIGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Cm</span>
+								</div>
+	      					</div>
+	      					<div class="property col-md-2 _add_pallet">
+								<label for="Number">Number of pallets:</label>
+		      					<div id="Number" class="input-group col-md-1">
+								    <input type="number" name="PALLET_NUMBER" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Pcs</span>
+								</div>
+	      					</div>
+	      					<div class="property  col-md-2 _add_pallet">
+								<label for="Height_pallet">Height:</label>
+		      					<div id="Height_pallet" class="input-group col-md-1">
+								    <input type="number" name="PALLET_HEIGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Cm</span>
+								</div>
+	      					</div>
+	      					<div class="property col-md-2 _add_pallet">
+								<label for="Weight_pallet">Weight for pallet:</label>
+		      					<div id="Weight_pallet" class="input-group col-md-1">
+								    <input type="number" name="PALLET_WEIGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Kg</span>
+								</div>
+	      					</div> 
+	      				</div>
+					</div>
+				</div>
+				<!--PALLET-->
+					<div class= "panel panel-default col-md-10 col-md-offset-1 active-_add_pallet">
+					<div class="panel-body">
+					<div class="top_panel row _add_parsel">
+				            <div class="col-md-offset-1 col-md-5 ">
+				                <div class="input-group">
+				                    <div class="input-group-btn">
+				                        <button type="button" class="btn  btn-info dropdown-toggle"
+				                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Belgium <span
+				                                class="caret"></span></button>
+				                        <ul class="dropdown-menu">
+				                            <li><a href="#">Ukraine</a></li>
+				                        </ul>
+				                    </div><!-- /btn-group -->
+				                    <input type="text" name="ZIP address" class="form-control" aria-label="...">
+				                </div><!-- /input-group -->
+				            </div><!-- /.col-lg-6 -->
+				            <div class="col-md-5">
+				                <div class="input-group">
+				                    <div class="input-group-btn">
+				                        <button type="button" class="btn btn-info dropdown-toggle"
+				                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Belgium <span
+				                                class="caret"></span></button>
+				                        <ul class="dropdown-menu">
+				                            <li><a href="#">Kyiv</a></li>
+				                        </ul>
+				                    </div><!-- /btn-group -->
+				                    <input type="text" name="ZIP address" class="form-control" aria-label="...">
+				                </div><!-- /input-group -->
+				            </div><!-- /.col-md-6 -->
+	      				</div>
+						<div class="row pallet bottom_panel">
+	      					<div class="col-md-offset-1 col-md-2 check " >
+		      					<input type="checkbox" data-onstyle="info" data-offstyle="info" data-toggle="toggle" data-on="PARCEL" data-off="PALLET" data-class="fast">
+	      					</div>
+	      					<div class="property col-md-2 _add_pallet">
+								<label for="Number">Number of pallets:</label>
+		      					<div id="Number" class="input-group col-md-1">
+								    <input type="number" name="PALLET_NUMBER" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Pcs</span>
+								</div>
+	      					</div>
+	      					<div class="property  col-md-2 _add_pallet">
+								<label for="Height_pallet">Height:</label>
+		      					<div id="Height_pallet" class="input-group col-md-1">
+								    <input type="number" name="PALLET_HEIGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Cm</span>
+								</div>
+	      					</div>
+	      					<div class="property col-md-2 _add_pallet">
+								<label for="Weight_pallet">Weight for pallet:</label>
+		      					<div id="Weight_pallet" class="input-group col-md-1">
+								    <input type="number" name="PALLET_WEIGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Kg</span>
+								</div>
+	      					</div>   
+	      					<div class="property col-md-1 _add_parsel">
+								<label for="weight">Weight:</label>
+		      					<div id="weight" class="input-group col-md-1">
+								    <input type="number" name="PARCEL_WEIGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Kg</span>
+								</div>
+	      					</div>
+	      					<div class="property property_first col-md-1 _add_parsel">
+								<label for="Lenght">Lenght:</label>
+		      					<div id="Lenght" class="input-group col-md-1">
+								    <input type="number" name="PARCEL_LENGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Cm</span>
+								</div>
+	      					</div>
+	      					<div class="property col-md-1 _add_parsel">
+								<label for="Width">Width:</label>
+		      					<div id="Width" class="input-group col-md-1">
+								    <input type="number" name="PARCEL_WIDTH" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Cm</span>
+								</div>
+	      					</div>      					
+	      					<div class="property col-md-1 _add_parsel">
+								<label for="Height">Height:</label>
+		      					<div id="Height" class="input-group col-md-1">
+								    <input type="number" name="PARCEL_HEIGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Cm</span>
+								</div>
+	      					</div> 
+					</div>
+				</div>
+				</div>
+				<!--PALLET-->
+				<div class= "panel panel-default col-md-10 col-md-offset-1 active-_add_pallet">
+					<div class="panel-body">
+					<div class="top_panel row _add_parsel">
+				            <div class="col-md-offset-1 col-md-5 ">
+				                <div class="input-group">
+				                    <div class="input-group-btn">
+				                        <button type="button" class="btn  btn-info dropdown-toggle"
+				                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Belgium <span
+				                                class="caret"></span></button>
+				                        <ul class="dropdown-menu">
+				                            <li><a href="#">Ukraine</a></li>
+				                        </ul>
+				                    </div><!-- /btn-group -->
+				                    <input type="text" name="ZIP address" class="form-control" aria-label="...">
+				                </div><!-- /input-group -->
+				            </div><!-- /.col-lg-6 -->
+				            <div class="col-md-5">
+				                <div class="input-group">
+				                    <div class="input-group-btn">
+				                        <button type="button" class="btn btn-info dropdown-toggle"
+				                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Belgium <span
+				                                class="caret"></span></button>
+				                        <ul class="dropdown-menu">
+				                            <li><a href="#">Kyiv</a></li>
+				                        </ul>
+				                    </div><!-- /btn-group -->
+				                    <input type="text" name="ZIP address" class="form-control" aria-label="...">
+				                </div><!-- /input-group -->
+				            </div><!-- /.col-md-6 -->
+	      				</div>
+						<div class="row pallet bottom_panel">
+	      					<div class="col-md-offset-1 col-md-2 check " >
+		      					<input type="checkbox" data-onstyle="info" data-offstyle="info" data-toggle="toggle" data-on="PARCEL" data-off="PALLET" data-class="fast">
+	      					</div>
+	      					<div class="property col-md-2 _add_pallet">
+								<label for="Number">Number of pallets:</label>
+		      					<div id="Number" class="input-group col-md-1">
+								    <input type="number" name="PALLET_NUMBER" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Pcs</span>
+								</div>
+	      					</div>
+	      					<div class="property  col-md-2 _add_pallet">
+								<label for="Height_pallet">Height:</label>
+		      					<div id="Height_pallet" class="input-group col-md-1">
+								    <input type="number" name="PALLET_HEIGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Cm</span>
+								</div>
+	      					</div>
+	      					<div class="property col-md-2 _add_pallet">
+								<label for="Weight_pallet">Weight for pallet:</label>
+		      					<div id="Weight_pallet" class="input-group col-md-1">
+								    <input type="number" name="PALLET_WEIGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Kg</span>
+								</div>
+	      					</div>   
+	      					<div class="property col-md-1 _add_parsel">
+								<label for="weight">Weight:</label>
+		      					<div id="weight" class="input-group col-md-1">
+								    <input type="number" name="PARCEL_WEIGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Kg</span>
+								</div>
+	      					</div>
+	      					<div class="property property_first col-md-1 _add_parsel">
+								<label for="Lenght">Lenght:</label>
+		      					<div id="Lenght" class="input-group col-md-1">
+								    <input type="number" name="PARCEL_LENGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Cm</span>
+								</div>
+	      					</div>
+	      					<div class="property col-md-1 _add_parsel">
+								<label for="Width">Width:</label>
+		      					<div id="Width" class="input-group col-md-1">
+								    <input type="number" name="PARCEL_WIDTH" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Cm</span>
+								</div>
+	      					</div>      					
+	      					<div class="property col-md-1 _add_parsel">
+								<label for="Height">Height:</label>
+		      					<div id="Height" class="input-group col-md-1">
+								    <input type="number" name="PARCEL_HEIGHT" class="form-control" aria-describedby="basic-addon2">
+								    <span class="input-group-addon" id="basic-addon2">Cm</span>
+								</div>
+	      					</div> 
+					</div>
+				</div>
+				</div>
+
+		</div>
+
+
+			<div class="row buttons_grid">
+				<div class="col-md-offset-1 col-sm-offset-1 col-lg-offset-1 col-xl-offset-1 col-md-5 col-sm-5 col-lg-5 col-xl-5">
+				<button type="button" id="remove_button" class="btn btn-primary">- Remove</button>
+				<button type="button" id="add_button" class="btn btn-primary">+ Add parcel or pallet</button>
+				</div>
+				<div class="col-md-5 col-sm-5 col-lg-5 col-xl-5 flex_justify" >
+					<button type="submit" class="quote btn btn-danger">Quote & book</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+  	<script type="text/javascript" src="js/jquery.min.js"></script>
+  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+  	<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  	<script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
